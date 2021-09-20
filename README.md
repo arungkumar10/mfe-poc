@@ -7,7 +7,7 @@ First give below command to install the npm packages.
 
 To run the application, give below command.
 
-**nx run dashboard:serve-mfe**
+**npx nx run dashboard:serve-mfe**
 
 It contains two applications,
 
