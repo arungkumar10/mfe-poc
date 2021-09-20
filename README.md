@@ -15,7 +15,7 @@ For login - **http://localhost:4201/**
 
 Login credentials
 
-username - demo
-password - demo
+username - **demo**
+password - **demo**
 
 For Dashboard - **http://localhost:4200/**
