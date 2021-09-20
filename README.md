@@ -1,7 +1,7 @@
 # mfe-poc
 Angular - Micro Front End
 
-First give below command.
+First give below command to install the npm packages.
 
 **npm install**
 
