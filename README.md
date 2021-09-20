@@ -9,6 +9,7 @@ To run the application, give below command.
 
 **nx run dashboard:serve-mfe**
 
-It contain two applications,
+It contains two applications,
+
 For login - **http://localhost:4201/**
 For Dashboard - **http://localhost:4200/**
