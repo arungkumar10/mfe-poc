@@ -7,8 +7,7 @@ First give below commands.
 
 To run the application, give below commands.
 
-**nx run dashboard:serve-mfe
-**
+**nx run dashboard:serve-mfe**
 
 It will run on two ports,
 For login - **http://localhost:4201/**
