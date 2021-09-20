@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
+import { ReusableComponent } from './reusable/reusable.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'forms',
     component: DynamicFormsComponent
+  },
+  {
+    path: 'table',
+    component: ReusableComponent
   }
 ];
 

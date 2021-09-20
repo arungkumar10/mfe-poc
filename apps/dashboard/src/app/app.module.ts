@@ -7,9 +7,10 @@ import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReusableComponent } from './reusable/reusable.component';
 
 @NgModule({
-  declarations: [AppComponent, DynamicFormsComponent],
+  declarations: [AppComponent, DynamicFormsComponent, ReusableComponent],
   imports: [
     BrowserModule,
     CommonModule,

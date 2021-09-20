@@ -1,0 +1,17 @@
+<table class="table table-responsive border">
+    <thead>
+        <tr>
+            <th *ngFor="let column of columns" scope="col" class="px-2">{{column.title}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of rows">
+            <td *ngFor="let column of dataProperty;let i= index" scope="row">
+                {{row[column]}}
+            </td>
+            <!-- <td *ngFor="let column of tableConfig.columns" scope="row">
+                <div>{{row.column['dataProperty']}}</div>
+            </td> -->
+        </tr>
+    </tbody>
+</table>
