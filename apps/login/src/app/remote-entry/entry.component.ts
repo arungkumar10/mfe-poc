@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from '@ng-mfe/shared/data-access-user';
 
 @Component({
@@ -47,9 +48,15 @@ export class RemoteEntryComponent {
 
   isLoggedIn$ = this.userService.isUserLoggedIn$;
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private router:Router) {}
 
   login() {
     this.userService.checkCredentials(this.username, this.password);
+    // this.router.navigate(['http://localhost:4200/']);
+    let loggedin:any;
+    console.log(this.isLoggedIn$.subscribe((res:any)=>{ loggedin = res; console.log(res);}));
+    if(loggedin){
+          window.open('http://localhost:4200/','_self');
+    }
   }
 }

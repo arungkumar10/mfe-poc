@@ -1,3 +1,6 @@
+<div class="mt-4">
+<h5>Reusable component</h5>
+<small>Using resuable component into home page.</small>
 <table class="table table-responsive border">
     <thead>
         <tr>
@@ -9,9 +12,7 @@
             <td *ngFor="let column of dataProperty;let i= index" scope="row">
                 {{row[column]}}
             </td>
-            <!-- <td *ngFor="let column of tableConfig.columns" scope="row">
-                <div>{{row.column['dataProperty']}}</div>
-            </td> -->
         </tr>
     </tbody>
 </table>
+</div>
