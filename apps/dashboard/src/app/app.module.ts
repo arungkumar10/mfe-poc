@@ -8,7 +8,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReusableComponent } from './reusable/reusable.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// kendo ui module 
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import { IntlModule } from "@progress/kendo-angular-intl";
+ import 'hammerjs';
+ 
 @NgModule({
   declarations: [AppComponent, DynamicFormsComponent, ReusableComponent],
   imports: [
@@ -26,7 +32,10 @@ import { ReusableComponent } from './reusable/reusable.component';
     //   ],
     //   { initialNavigation: 'enabledBlocking' }
     // ),
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ChartsModule,
+    IntlModule
   ],
   providers: [],
   bootstrap: [AppComponent],

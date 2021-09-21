@@ -19,4 +19,6 @@ export class AppComponent {
     { firstName: 'John', lastName: 'Joseph', occupation: 'Teacher', companyName: 'Abc Inc.' },
     { firstName: 'John', lastName: 'Joseph', occupation: 'Teacher', companyName: 'Abc Inc.' }
   ];
+  public seriesData: number[] = [20, 40, 45, 30, 50];
+  public categories: string[] = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 }
