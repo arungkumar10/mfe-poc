@@ -15,9 +15,9 @@ export class AppComponent {
   ];
   rows:any = [
     { firstName: 'John', lastName: 'Joseph', occupation: 'Teacher', companyName: 'Abc Inc.' },
-    { firstName: 'John', lastName: 'Joseph', occupation: 'Teacher', companyName: 'Abc Inc.' },
-    { firstName: 'John', lastName: 'Joseph', occupation: 'Teacher', companyName: 'Abc Inc.' },
-    { firstName: 'John', lastName: 'Joseph', occupation: 'Teacher', companyName: 'Abc Inc.' }
+    { firstName: 'Steve', lastName: 'Jobs', occupation: 'Business', companyName: 'Steve Copper.' },
+    { firstName: 'Tidias', lastName: 'Teck', occupation: 'Manager', companyName: 'Tidias Enterprise.' },
+    { firstName: 'Stadon', lastName: 'Jack', occupation: 'Leader', companyName: 'Stadon Ltd' }
   ];
   public seriesData: number[] = [20, 40, 45, 30, 50];
   public categories: string[] = ["Mon", "Tue", "Wed", "Thu", "Fri"];

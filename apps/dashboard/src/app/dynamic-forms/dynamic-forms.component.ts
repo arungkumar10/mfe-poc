@@ -8,6 +8,7 @@ import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class DynamicFormsComponent implements OnInit {
   exampleForm:any = FormGroup;
+  totalusers: any = [];
 
   constructor(private formbuilder: FormBuilder) { }
 
@@ -29,6 +30,8 @@ export class DynamicFormsComponent implements OnInit {
   addUnits(){
     const control = <FormArray>this.exampleForm.controls['units'];
     control.push(this.getUnits());
+
+    // this.totalusers.push();
   }
   
   submit(){

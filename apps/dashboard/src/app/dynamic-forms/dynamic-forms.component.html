@@ -1,12 +1,10 @@
+<h5 class="pb-2">Dynamic Forms</h5>
 <div class="border p-4">
 <form [formGroup]="exampleForm" class="">
     <div class="form-group mb-4">
         <label>Company Name</label>
         <input type="text" class="form-control" formControlName="companyName" name="companyName">
     </div>
-    <!-- <div>
-        <input type="text" formControlName="countryName" name="countryName">
-    </div> -->
     <h5>User Details</h5>
     <div formArrayName="units" class="mb-2" *ngFor="let units of exampleForm.controls.units.controls;let i=index;">
         <div>User No. {{i + 1}}</div>
@@ -24,8 +22,6 @@
             <input type="number" formControlName="mobile" name="mobile" class="form-control">
             <p class="text-danger" *ngIf="units.controls.mobile.touched && units.controls.mobile.errors?.required">Mobile is required</p>
         </div>
-        
-        <!-- {{form.unitprice}} -->
         </div>
     </div>
     
@@ -40,3 +36,10 @@
 </div>
 
 </div>
+
+
+
+
+
+
+<!-- https://nx.dev/latest/angular/guides/setup-mfe-with-angular -->
